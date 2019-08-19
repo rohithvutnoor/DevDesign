@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script>
+            var app = angular.module("myApp", []);
+            app.controller("myCtrl", function($scope) {
+                $scope.errorList = [
+                    {
+                        "errorCode":"1",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field partyId is missing"
+                    },
+                    {
+                        "errorCode":"2",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field rewardId is missing"
+                    },
+                    {
+                        "errorCode":"3",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field uuid is missing"
+                    },
+                    {
+                        "errorCode":"4",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field partyId is missing"
+                    },
+                    {
+                        "errorCode":"5",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field rewardId is missing"
+                    },
+                    {
+                        "errorCode":"6",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field partyId is missing"
+                    },
+                    {
+                        "errorCode":"7",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field partyId is missing"
+                    },
+                    {
+                        "errorCode":"8",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field rewardId is missing"
+                    },
+                    {
+                        "errorCode":"9",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field uuid is missing"
+                    },
+                    {
+                        "errorCode":"10",
+                        "errorMessage":"Your Request is Incorrect. Please Verify the input parameters.",
+                        "errorDescription":"Mandatory field partyId is missing"
+                    }
+                ]
+            });
+        </script>
+    </head>
+    <body ng-app="myApp" ng-controller="myCtrl">
+    
+        <nav class="light-blue lighten-1" role="navigation">
+            <div class="nav-wrapper container">
+                <a id="logo-container" href="Rewards.html" class="brand-logo">DBS CAPI</a>
+                <ul class="right">
+                    <li><a href="Rewards.html"><i class="material-icons">home</i></a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="fixed-action-btn" style="bottom:45px;right:24px">
+            <a href="" data-activates="slide-out" class="button-collapse waves-effect waves-light btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a>
+        </div>
+
+        <ul id="slide-out" class="side-nav">
+            <li>
+                <a class="waves-effect" href="Rewards.html"><i class="material-icons">home</i>Home</a><div class="divider"></div>
+            </li>
+            <li>
+                <a target="_blank" class="waves-effect" href="Google.com"><i class="material-icons">language</i>API Swagger</a><div class="divider"></div>
+            </li>
+            <li>
+                <a class="waves-effect" href="ErrorCodes.html"><i class="material-icons">folder_special</i>Error Codes</a><div class="divider"></div>
+            </li>
+            <li>
+                <a class="waves-effect" href="FAQ.html"><i class="material-icons">question_answer</i>FAQ</a><div class="divider"></div>
+            </li>
+        </ul>
+
+        <div class="container">
+            <br><br><br>
+            <div class="row">
+                <div class="col s12">
+                    <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">search</i>
+                        <input ng-model="searchtxt" type="text" id="autocomplete-input" class="autocomplete">
+                        <label for="autocomplete-input">Error Code</label>
+                    </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="card-panel" margin=1% ng-repeat = "errorObject in errorList | filter : searchtxt"   ng-class-odd="'balanced'" ng-class-even="'assertive'">
+                <p class = "text-bold"> {{errorObject.errorCode}}</p>
+                <p class = "text-bold">  {{errorObject.errorMessage}}</p>
+                <p class = "text-bold">  {{errorObject.errorDescription}}</p>
+            </div>
+        </div>
+    </body>
+    <!--Import jQuery before materialize.js-->
+    <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.modal').modal();
+            $('.button-collapse').sideNav();
+            var clipboard = new ClipboardJS('.clipboard');    
+            $('input.autocomplete').autocomplete({
+                data: {
+                    "1":null,
+                    "12":null,
+                    "123":null,
+                    "269":null,
+                    "334":null,
+                    "364":null
+                },
+                limit: 7,
+                onAutocomplete: function(val) {},minLength: 1,});      
+            });
+            
+    </script>
+        
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</html>

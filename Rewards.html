@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!--Import Google Icon Font-->
+      <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+      <script>
+        var app = angular.module("myApp", []);
+        app.controller("myCtrl", function($scope) {
+          $scope.records = [
+            "Alfreds Futterkiste",
+            "Berglunds snabbköp",
+            "Centro comercial Moctezuma",
+            "Ernst Handel",
+          ]
+        });
+      </script>
+</head>
+<body ng-app="myApp" ng-controller="myCtrl">
+  <nav class="light-blue lighten-1" role="navigation">
+    <div class="nav-wrapper container">
+      <a id="logo-container" href="Rewards.html" class="brand-logo">DBS CAPI</a>
+      <ul class="right">
+        <li><a href="Rewards.html"><i class="material-icons">home</i></a></li>
+      </ul>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br><br><br>
+      <h1 class="header center orange-text">Welcome to Rewards Journey</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">A journey</h5>
+      </div><br>
+      <div class="row center">
+        <a href="#apiOverview" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+      </div>
+      <br><br><br><br><br><br>
+
+    </div>
+  </div>
+  <div class="fixed-action-btn" style="bottom:45px;right:24px">
+      <a href="" data-activates="slide-out" class="button-collapse waves-effect waves-light btn btn-floating btn-large cyan"><i class="material-icons">menu</i></a>
+  </div>
+
+  <div class="container">
+  <!-- SIDENAV -->
+        <a name = "apiOverview" class="center"><h2>API OVERVIEW</h2></a><br>
+        <ul id="slide-out" class="side-nav">
+          <li>
+            <a class="waves-effect" href="Rewards.html"><i class="material-icons">home</i>Home</a><div class="divider"></div>
+          </li>
+          <li>
+            <a target="_blank" class="waves-effect" href="Google.com"><i class="material-icons">language</i>API Swagger</a><div class="divider"></div>
+          </li>
+          <li>
+            <a class="waves-effect" href="ErrorCodes.html"><i class="material-icons">folder_special</i>Error Codes</a><div class="divider"></div>
+          </li>
+          <li>
+            <a class="waves-effect" href="FAQ.html"><i class="material-icons">question_answer</i>FAQ</a><div class="divider"></div>
+          </li>
+        </ul>
+
+        <!-- API Cards Display -->
+        <div id = "row1" class="row">
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Rewards Summary API</span>
+                <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+              </div>
+            </div>
+          </div>
+          <div class="col s12 m6">
+            <div class="card">
+              <div class="card-content">
+                <span class="card-title">Payment Reversal API</span>
+                <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+              </div>
+              <div class="card-action">
+                  <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id = "row2" class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Rewards Summary API</span>
+                  <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                </div>
+              </div>
+            </div>
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content">
+                  <span class="card-title">Payment Reversal API</span>
+                  <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+                </div>
+                <div class="card-action">
+                    <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div id = "row3" class="row">
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Rewards Summary API</span>
+                    <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                  </div>
+                </div>
+              </div>
+              <div class="col s12 m6">
+                <div class="card">
+                  <div class="card-content">
+                    <span class="card-title">Payment Reversal API</span>
+                    <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+                  </div>
+                  <div class="card-action">
+                      <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div id = "row4" class="row">
+                <div class="col s12 m6">
+                  <div class="card">
+                    <div class="card-content">
+                      <span class="card-title">Rewards Summary API</span>
+                      <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="col s12 m6">
+                  <div class="card">
+                    <div class="card-content">
+                      <span class="card-title">Payment Reversal API</span>
+                      <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
+                    </div>
+                    <div class="card-action">
+                        <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                    </div>
+                  </div>
+                </div>
+              </div>                          
+              <!-- MODAL TRIGGERS -->
+              <div id="modal1" class="modal">
+                <div class="modal-content" >
+                   <h4>Payment By Rebates API</h4>
+                   <strong><p>Request URL: </strong>
+                   <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+                   <strong>Request Headers</strong>
+                   <pre style="text-align: left">
+                    <code>
+              <a href="" class="tooltipped" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+              <a href="" class="tooltipped" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+              <a href="" class="tooltipped" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+                    </code>
+                   </pre>
+                   <strong id ="hai">Request Body: </strong>
+                   <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#request>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+                    <pre style="text-align: left" id = "request">
+{
+  "merchantId": "OLSMERCHANT123",
+  "orderId":"orderId1234",
+  "referenceId":"referenceId1234",
+  "grossAmount":{
+    "amount":0.1,
+    "currency":"SGD"
+  },
+  "redeemAmount":{
+    "amount":0.1,
+    "currency":"SGD"
+  },
+  "partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<pre>
+{
+  "response": "abcdefg",
+  "orderId":"orderId1234",
+  "grossAmount":{
+    "amount":0.1,
+    "currency":"SGD"
+  },
+  "partyId":"43211234566432198"
+}</pre>
+                  </div>
+                <div class="modal-footer">
+                  <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
+                </div>
+              </div>
+              <p></p>
+              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
+            </div>
+    <div class="section">
+      <div class="row">
+        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+      </div>
+      <a href="end" ><h1>API END</h1></a>
+      <!--   Icon Section   
+      <div class="row">
+        <div class="col s12 m4">
+          <div class="icon-block">
+            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
+            <h5 class="center">Speeds up development</h5>
+
+            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
+          </div>
+        </div>-->
+    </div>
+    <br><br>
+  </div>
+
+<!--
+  <footer class="page-footer orange">
+    <div class="footer-copyright orange">
+      <div class="container">
+        <h5 class="white-text">DBS CAPI</h5>
+          <p class="grey-text text-lighten-4">We are ....</p>
+      </div>
+    </div>
+  </footer>
+-->
+
+
+<!--Import jQuery before materialize.js-->
+      <script src="https://cdn.jsdelivr.net/npm/clipboard@2/dist/clipboard.min.js"></script>
+      <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          // Init Carousel
+          $('.carousel').carousel();
+
+          // Init Carousel Slider
+          $('.carousel.carousel-slider').carousel({fullWidth:true});
+
+          // Fire off toast
+          //Materialize.toast('Hello World', 3000);
+
+          // Init Slider
+          $('.slider').slider();
+
+          // Init Modal
+          $('.modal').modal();
+
+          // Init Sidenav
+          $('.button-collapse').sideNav();
+          
+          var clipboard = new ClipboardJS('.clipboard');          
+        });
+      </script>
+      
+      <style>
+        html {
+          scroll-behavior: smooth;
+        }
+      </style>
+  </body>
+</html>
