@@ -11,22 +11,45 @@
                 $scope.faqList = [
                     {
                         "question":"1. Why rewards summary api fails with S999 error?",
-                        "answer":"We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default",
-                        "tag":"rewardsSummary"
+                        "answer":[
+                            "abc", "def", "ghi"
+                        ],
+                        "tag":"rewardsSummary",
+                        "src":"./assets/img/rewards.png"
                     },
                     {
                         "question":"2. Why Payments api fails with S999 error?",
-                        "answer":"We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.",
+                        "answer":[
+                            "eWe did most of the heavy lifting for you to provide ",
+                            "fblifting for you to provide a default stylings that"
+                        ],
                         "tag":"paymentByPoints"
                     },
                     {
                         "question":"3. Why rewards summary api fails with S999 error?",
-                        "answer":"Default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.",
-                        "tag":"paymentBuyRebates"
+                        "answer":[
+                            "cdWe did most of the heavy lifting for you to provide ",
+                            "blifting for you to provide a default stylings that"
+                        ],
+                        "tag":"paymentBuyRebates",
+                        "src":"./assets/img/a.jpg"
                     },
                     {
                         "question":"4. Why Payments summary api fails with S999 error?",
-                        "answer":"Custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers. We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.",
+                        "answer":[
+                            "aWe did most of the heavy lifting for you to provide ",
+                            "blifting for you to provide a default stylings that"
+                        ],
+                        "tag":"rewardsSummary"
+                    },
+                    {
+                        "question":"5. Why Payments summary api fails with S999 error?",
+                        "answer":[
+                            "1We did most of the heavy lifting for you to provide ",
+                            "2blifting for you to provide a default stylings that",
+                            "3blifting for you to provide, a default stylings that",
+                            "4blifting for you to provide, a default stylings that"
+                        ],
                         "tag":"rewardsSummary"
                     }
                 ]
@@ -78,7 +101,8 @@
             </div><br>
             <div class="card-panel" ng-repeat = "faqObject in faqList | filter : searchtxt"   ng-class-odd="'balanced'" ng-class-even="'assertive'">
                 <p class = "text-bold"> {{faqObject.question}}</p>
-                <p class = "text-bold">  {{faqObject.answer}}</p>
+                <img src={{faqObject.src}} width="auto" height="300">
+                <p class = "text-bold" ng-repeat = "answer in faqObject.answer">  {{answer}}</p>
             </div>
         </div>
     </body>

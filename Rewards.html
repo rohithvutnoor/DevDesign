@@ -22,7 +22,7 @@
       </script>
 </head>
 <body ng-app="myApp" ng-controller="myCtrl">
-  <nav class="light-blue lighten-1" role="navigation">
+  <nav class=" teal lighten-2" role="navigation">
     <div class="nav-wrapper container">
       <a id="logo-container" href="Rewards.html" class="brand-logo">DBS CAPI</a>
       <ul class="right">
@@ -38,7 +38,7 @@
         <h5 class="header col s12 light">A journey</h5>
       </div><br>
       <div class="row center">
-        <a href="#apiOverview" id="download-button" class="btn-large waves-effect waves-light orange">Get Started</a>
+        <a href="#apiOverview" id="download-button" class="btn-large waves-effect waves-light teal lighten-2">Get Started</a>
       </div>
       <br><br><br><br><br><br>
 
@@ -49,8 +49,7 @@
   </div>
 
   <div class="container">
-  <!-- SIDENAV -->
-        <a name = "apiOverview" class="center"><h2>API OVERVIEW</h2></a><br>
+        <!-- SIDENAV -->
         <ul id="slide-out" class="side-nav">
           <li>
             <a class="waves-effect" href="Rewards.html"><i class="material-icons">home</i>Home</a><div class="divider"></div>
@@ -66,6 +65,8 @@
           </li>
         </ul>
 
+        <a name = "apiOverview" class="center orange-text"><h2>Overview</h2></a><br>
+
         <!-- API Cards Display -->
         <div id = "row1" class="row">
           <div class="col s12 m6">
@@ -75,18 +76,18 @@
                 <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
               </div>
               <div class="card-action">
-                  <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                  <a href="#rsm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
               </div>
             </div>
           </div>
           <div class="col s12 m6">
             <div class="card">
               <div class="card-content">
-                <span class="card-title">Payment Reversal API</span>
+                <span class="card-title">Rebates Cashback API</span>
                 <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
               </div>
               <div class="card-action">
-                  <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                  <a href="#rcm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
               </div>
             </div>
           </div>
@@ -95,22 +96,22 @@
             <div class="col s12 m6">
               <div class="card">
                 <div class="card-content">
-                  <span class="card-title">Rewards Summary API</span>
+                  <span class="card-title">Payment By Points API</span>
                   <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
                 </div>
                 <div class="card-action">
-                    <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                    <a href="#ppm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
                 </div>
               </div>
             </div>
             <div class="col s12 m6">
               <div class="card">
                 <div class="card-content">
-                  <span class="card-title">Payment Reversal API</span>
+                  <span class="card-title">Payment By Rebates API</span>
                   <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
                 </div>
                 <div class="card-action">
-                    <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                    <a href="#prm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
                 </div>
               </div>
             </div>
@@ -119,22 +120,22 @@
               <div class="col s12 m6">
                 <div class="card">
                   <div class="card-content">
-                    <span class="card-title">Rewards Summary API</span>
+                    <span class="card-title">Payment Reversal API</span>
                     <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
                   </div>
                   <div class="card-action">
-                      <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                      <a href="#prvm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
                   </div>
                 </div>
               </div>
               <div class="col s12 m6">
                 <div class="card">
                   <div class="card-content">
-                    <span class="card-title">Payment Reversal API</span>
+                    <span class="card-title">Reward Item Conversion Rates API</span>
                     <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
                   </div>
                   <div class="card-action">
-                      <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                      <a href="#icrm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
                   </div>
                 </div>
               </div>
@@ -143,43 +144,48 @@
                 <div class="col s12 m6">
                   <div class="card">
                     <div class="card-content">
-                      <span class="card-title">Rewards Summary API</span>
+                      <span class="card-title">Balance Check API</span>
                       <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                        <a href="#bcm" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
                     </div>
                   </div>
                 </div>
                 <div class="col s12 m6">
                   <div class="card">
                     <div class="card-content">
-                      <span class="card-title">Payment Reversal API</span>
+                      <span class="card-title">Reward Accounts API</span>
                       <strong><p>API Description: </strong>This API allows a customer to perform payment using rebates.</p>
                     </div>
                     <div class="card-action">
-                        <a href="#modal1" ><button class="btn btn-large teal"><i class="material-icons left">cloud</i> Read More</button></a>
+                        <a href="#ram" ><button class="btn btn-large teal lighten-2"><i class="material-icons right">launch</i> Read More</button></a>
                     </div>
                   </div>
                 </div>
-              </div>                          
-              <!-- MODAL TRIGGERS -->
-              <div id="modal1" class="modal">
+              </div>          
+              
+              
+
+<!-- MODAL TRIGGERS -->
+
+<!-- Rewards Summary rs -->
+              <div id="rsm" class="modal">
                 <div class="modal-content" >
-                   <h4>Payment By Rebates API</h4>
+                   <h4>Rewards Summary API</h4>
                    <strong><p>Request URL: </strong>
                    <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
                    <strong>Request Headers</strong>
                    <pre style="text-align: left">
                     <code>
-              <a href="" class="tooltipped" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
-              <a href="" class="tooltipped" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
-              <a href="" class="tooltipped" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+              <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+              <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+              <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
                     </code>
                    </pre>
                    <strong id ="hai">Request Body: </strong>
-                   <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#request>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
-                    <pre style="text-align: left" id = "request">
+                   <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#rs1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+                    <pre style="text-align: left" id = "rs1">
 {
   "merchantId": "OLSMERCHANT123",
   "orderId":"orderId1234",
@@ -195,7 +201,8 @@
   "partyId":"43211234566432198"
 }</pre>
 <strong>Response</strong>
-<pre>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#rs2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "rs2">
 {
   "response": "abcdefg",
   "orderId":"orderId1234",
@@ -204,44 +211,325 @@
     "currency":"SGD"
   },
   "partyId":"43211234566432198"
+}</pre></div></div>
+
+<!-- Rebates Cashback -->
+<div id="rcm" class="modal">
+    <div class="modal-content" >
+       <h4>Rebates Cashback API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#rc1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "rc1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
 }</pre>
-                  </div>
-                <div class="modal-footer">
-                  <a href="" class="modal-action modal-close waves-effect waves-green">Button</a>
-                </div>
-              </div>
-              <p></p>
-              <span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eligendi, totam?</span>
-            </div>
-    <div class="section">
-      <div class="row">
-        <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-      </div>
-      <a href="end" ><h1>API END</h1></a>
-      <!--   Icon Section   
-      <div class="row">
-        <div class="col s12 m4">
-          <div class="icon-block">
-            <h2 class="center light-blue-text"><i class="material-icons">flash_on</i></h2>
-            <h5 class="center">Speeds up development</h5>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#rc2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "rc2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+<!-- End Modals-->
 
-            <p class="light">We did most of the heavy lifting for you to provide a default stylings that incorporate our custom components. Additionally, we refined animations and transitions to provide a smoother experience for developers.</p>
-          </div>
-        </div>-->
+<!-- PaymentByPoints -->
+<div id="ppm" class="modal">
+    <div class="modal-content" >
+       <h4>Payment By Points API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#pp1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "pp1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#pp2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "pp2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+
+<!-- PaymentByRebates -->
+<div id="prm" class="modal">
+    <div class="modal-content" >
+       <h4>Payment By Rebates API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#pr1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "pr1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#pr2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "pr2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+
+
+<!-- Payment Reversal -->
+<div id="prvm" class="modal">
+    <div class="modal-content" >
+       <h4>Payment Reversal API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#prv>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "prv1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#prv2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "prv2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+
+
+<!-- ItemConversionRates -->
+<div id="icrm" class="modal">
+    <div class="modal-content" >
+       <h4>Reward Item Conversion Rates API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#ic1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "ic1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#ic2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "ic2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+
+
+<!-- Balance Check -->
+<div id="bcm" class="modal">
+    <div class="modal-content" >
+       <h4>Balance Check API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#bc1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "bc1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#bc2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "bc2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+
+
+<!-- RewardAccounts -->
+<div id="ram" class="modal">
+    <div class="modal-content" >
+       <h4>Reward Accounts API</h4>
+       <strong><p>Request URL: </strong>
+       <a href="" class="tooltipped" data-position="right" data-tooltip="API Endpoint">http://sgp.dbs.com/api/sg/v1/{partyId}/rewardsSummary</a></p>
+       <strong>Request Headers</strong>
+       <pre style="text-align: left">
+        <code>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Client Id">clientId: 9baf12-q4r2es-797449-dfb56</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Uniqe Identifier">uuid: 9baf12-q4r2es-</a>
+  <a href="" class="tooltipped black-text" data-position="right" data-tooltip="Authentication">accessToken: token-access-9baf12</a>
+        </code>
+       </pre>
+       <strong id ="hai">Request Body: </strong>
+       <a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#ra1>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+        <pre style="text-align: left" id = "ra1">
+{
+"merchantId": "OLSMERCHANT123",
+"orderId":"orderId1234",
+"referenceId":"referenceId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"redeemAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre>
+<strong>Response</strong>
+<a class = "waves-effect clipboard"><i class="material-icons clipboard right" data-clipboard-target=#ra2>									<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M16 1H4c-1.1 0-2 .9-2 2v14h2V3h12V1zm3 4H8c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h11c1.1 0 2-.9 2-2V7c0-1.1-.9-2-2-2zm0 16H8V7h11v14z"/></svg>								</i></a>
+<pre id = "ra2">
+{
+"response": "abcdefg",
+"orderId":"orderId1234",
+"grossAmount":{
+"amount":0.1,
+"currency":"SGD"
+},
+"partyId":"43211234566432198"
+}</pre></div></div>
+
+
+
     </div>
-    <br><br>
   </div>
-
-<!--
-  <footer class="page-footer orange">
-    <div class="footer-copyright orange">
-      <div class="container">
-        <h5 class="white-text">DBS CAPI</h5>
-          <p class="grey-text text-lighten-4">We are ....</p>
-      </div>
-    </div>
-  </footer>
--->
 
 
 <!--Import jQuery before materialize.js-->
